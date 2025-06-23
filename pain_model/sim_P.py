@@ -483,7 +483,7 @@ for it in range(its):
     st.append(state_list[0:T])
     
     if args == 'AL':
-        break #TODO
+        break #TODO: reproduce fig4:b,c,d
     elif args == 'P1':
         NPY = 0.001
     elif args == 'P2':

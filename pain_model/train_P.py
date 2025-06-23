@@ -21,10 +21,10 @@ import seaborn as sns
 from numpy.random import default_rng
 
 
-AL1 = scipy.io.loadmat('bouts1_AL')
-AL2 = scipy.io.loadmat('bouts2_AL')
-FD1 = scipy.io.loadmat('bouts1_FD')
-FD2 = scipy.io.loadmat('bouts2_FD')
+AL1 = scipy.io.loadmat('data/bouts1_AL')
+AL2 = scipy.io.loadmat('data/bouts2_AL')
+FD1 = scipy.io.loadmat('data/bouts1_FD')
+FD2 = scipy.io.loadmat('data/bouts2_FD')
                        
 rng = default_rng()
 nb_steps = 600  # amount of steps
