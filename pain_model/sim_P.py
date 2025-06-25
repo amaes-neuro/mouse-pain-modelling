@@ -232,7 +232,7 @@ def plot_bhv_hunger(bhv,bhv_hunger,its,args):
 def plot_bhv_of_real_mouse(mouse_id):
     licking = np.zeros((12,))
     freezing = np.zeros((12,))
-    bhv = load_all(mouse_id)
+    bhv,_ = load_all(mouse_id)
     bhv = bhv[1:4,12000:] #guarding, licking and freezing
     bhv[0,:] = bhv[0,:] + bhv[2,:] #lump guarding and freezing together
     bhv[0,np.where(bhv[0,:]>1)] = 1 
@@ -498,3 +498,6 @@ plot_bar(bhv,bhv_hunger,1, args)
 plot_bar(bhv,bhv_hunger,2, args)
 plot_avg_PE_comparison(st, st_hunger, 0, args)
 plot_avg_PE_comparison(st, st_hunger, 1, args)
+
+
+
